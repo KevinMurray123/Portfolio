@@ -1,0 +1,240 @@
+body{
+    font-family: 'Bebas Neue', cursive;
+    background-color: #040404;
+    color: #fff;
+    position: relative;
+    background: transparent;
+
+    &::before{
+        content: "";
+        position: fixed;
+        background: #303030 top right no-repeat; //can place an image if you want
+        background-size: cover;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 100vh;
+        z-index: -1;
+    }
+}
+
+a{
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: none;
+    }
+}
+
+#landing{
+    width: 100%;
+    height: 100vh;
+    background-color: #242424;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='354' height='354' viewBox='0 0 200 200'%3E%3Cg fill='none' stroke='%23ff0000' stroke-width='1.2' stroke-opacity='0.37'%3E%3Crect x='-40' y='40' width='75' height='75'/%3E%3Crect x='-35' y='45' width='65' height='65'/%3E%3Crect x='-30' y='50' width='55' height='55'/%3E%3Crect x='-25' y='55' width='45' height='45'/%3E%3Crect x='-20' y='60' width='35' height='35'/%3E%3Crect x='-15' y='65' width='25' height='25'/%3E%3Crect x='-10' y='70' width='15' height='15'/%3E%3Crect x='-5' y='75' width='5' height='5'/%3E%3Crect width='35' height='35'/%3E%3Crect x='5' y='5' width='25' height='25'/%3E%3Crect x='10' y='10' width='15' height='15'/%3E%3Crect x='15' y='15' width='5' height='5'/%3E%3Crect x='40' width='75' height='75'/%3E%3Crect x='45' y='5' width='65' height='65'/%3E%3Crect x='50' y='10' width='55' height='55'/%3E%3Crect x='55' y='15' width='45' height='45'/%3E%3Crect x='60' y='20' width='35' height='35'/%3E%3Crect x='65' y='25' width='25' height='25'/%3E%3Crect x='70' y='30' width='15' height='15'/%3E%3Crect x='75' y='35' width='5' height='5'/%3E%3Crect x='40' y='80' width='35' height='35'/%3E%3Crect x='45' y='85' width='25' height='25'/%3E%3Crect x='50' y='90' width='15' height='15'/%3E%3Crect x='55' y='95' width='5' height='5'/%3E%3Crect x='120' y='-40' width='75' height='75'/%3E%3Crect x='125' y='-35' width='65' height='65'/%3E%3Crect x='130' y='-30' width='55' height='55'/%3E%3Crect x='135' y='-25' width='45' height='45'/%3E%3Crect x='140' y='-20' width='35' height='35'/%3E%3Crect x='145' y='-15' width='25' height='25'/%3E%3Crect x='150' y='-10' width='15' height='15'/%3E%3Crect x='155' y='-5' width='5' height='5'/%3E%3Crect x='120' y='40' width='35' height='35'/%3E%3Crect x='125' y='45' width='25' height='25'/%3E%3Crect x='130' y='50' width='15' height='15'/%3E%3Crect x='135' y='55' width='5' height='5'/%3E%3Crect y='120' width='75' height='75'/%3E%3Crect x='5' y='125' width='65' height='65'/%3E%3Crect x='10' y='130' width='55' height='55'/%3E%3Crect x='15' y='135' width='45' height='45'/%3E%3Crect x='20' y='140' width='35' height='35'/%3E%3Crect x='25' y='145' width='25' height='25'/%3E%3Crect x='30' y='150' width='15' height='15'/%3E%3Crect x='35' y='155' width='5' height='5'/%3E%3Crect x='200' y='120' width='75' height='75'/%3E%3Crect x='40' y='200' width='75' height='75'/%3E%3Crect x='80' y='80' width='75' height='75'/%3E%3Crect x='85' y='85' width='65' height='65'/%3E%3Crect x='90' y='90' width='55' height='55'/%3E%3Crect x='95' y='95' width='45' height='45'/%3E%3Crect x='100' y='100' width='35' height='35'/%3E%3Crect x='105' y='105' width='25' height='25'/%3E%3Crect x='110' y='110' width='15' height='15'/%3E%3Crect x='115' y='115' width='5' height='5'/%3E%3Crect x='80' y='160' width='35' height='35'/%3E%3Crect x='85' y='165' width='25' height='25'/%3E%3Crect x='90' y='170' width='15' height='15'/%3E%3Crect x='95' y='175' width='5' height='5'/%3E%3Crect x='120' y='160' width='75' height='75'/%3E%3Crect x='125' y='165' width='65' height='65'/%3E%3Crect x='130' y='170' width='55' height='55'/%3E%3Crect x='135' y='175' width='45' height='45'/%3E%3Crect x='140' y='180' width='35' height='35'/%3E%3Crect x='145' y='185' width='25' height='25'/%3E%3Crect x='150' y='190' width='15' height='15'/%3E%3Crect x='155' y='195' width='5' height='5'/%3E%3Crect x='160' y='40' width='75' height='75'/%3E%3Crect x='165' y='45' width='65' height='65'/%3E%3Crect x='170' y='50' width='55' height='55'/%3E%3Crect x='175' y='55' width='45' height='45'/%3E%3Crect x='180' y='60' width='35' height='35'/%3E%3Crect x='185' y='65' width='25' height='25'/%3E%3Crect x='190' y='70' width='15' height='15'/%3E%3Crect x='195' y='75' width='5' height='5'/%3E%3Crect x='160' y='120' width='35' height='35'/%3E%3Crect x='165' y='125' width='25' height='25'/%3E%3Crect x='170' y='130' width='15' height='15'/%3E%3Crect x='175' y='135' width='5' height='5'/%3E%3Crect x='200' y='200' width='35' height='35'/%3E%3Crect x='200' width='35' height='35'/%3E%3Crect y='200' width='35' height='35'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+
+    &::before{
+        content: "";
+        background: rgba(0,0,0,0.35);
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .landing-container{
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 0 15px;
+    }
+
+    h1{
+        margin: 0 0 10px 0;
+        font-size: 64px;
+        font-family: 'Bebas Neue', cursive; //update later
+        color: #fff;
+    }
+
+    h2{
+        color: #ddd;
+        margin-bottom: 50px;
+        font-size: 20px;
+        font-weight: 500;
+        letter-spacing: 1px;
+        text-transform: uppercase;
+    }
+
+    .btn-scroll{
+        transition: .5s;
+        color: rgb(231, 231, 231);
+        animation: up-down 1s ease-in-out infinite alternate-reverse both;
+
+        p{
+            font-size: 48px;
+        }
+
+        &:hover{
+            color: rgb(252, 168, 168);
+        }
+    }
+    .progress{
+        margin-bottom: 5rem;
+    }
+}
+.showcase{
+    background-color: #252525;
+    margin-top: 5rem;
+    border: {
+        top: double rgb(68, 0, 0) 20px;
+        bottom: double rgb(68, 0, 0) 20px;
+    }
+
+    padding: {
+        top: 20px;
+        bottom: 20px;
+    }
+    
+    h1{
+        text-align: center;
+        z-index: 6;
+    }
+
+    h2{
+        margin-bottom: 20px;
+    }
+
+    a{
+        color: rgb(177, 0, 0);
+        text-align: center;
+        &:hover{
+            transition: 1s;
+            color: red;
+        }
+    }
+
+    img{
+        border: double rgb(68, 0, 0) 10px;
+        width: 70%;
+    }
+}
+.skills{
+
+    .progress{
+        height: 60px;
+        display: block;
+        background: none;
+        border-radius: 0;
+        .skill{
+            padding: 10px 0;
+            margin: 0;
+            text-transform: uppercase;
+            display: block;
+            font-weight: 200;
+            font-family: 'Bebas Neue', cursive;
+            color: #fff;
+
+            .val{
+                float: right;
+                font-style: normal;
+            }
+        }
+        &:last-child{
+            margin-bottom: 2rem;
+        }
+    }
+
+    .progress-bar-wrap{
+        background: lightgrey;
+        border-radius: 5px
+    }
+
+    .progress-bar{
+        height: 10px;
+        transition: 1s;
+        border-radius: 10px;
+        background: linear-gradient(90deg, salmon,red, darkred);
+    }
+
+    h1{
+        margin-top: 2rem;
+        text-align: center;
+        z-index: 6;
+    }
+}
+
+.resume{
+    margin-top: 50px;
+    .resume-title{
+        font-size: 26px;
+        font-weight: 700;
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #fff;
+    }
+
+    .resume-item{
+        padding: 0 0 20px 20px;
+        margin-top: -2px;
+        border-left: 2px darkred solid ;
+        position: relative;
+        h4{
+            line-height: 18px;
+            font-size: 25px;
+            font-weight: 500;
+            text-transform: uppercase;
+            font-family: 'Bebas Neue', cursive;
+            color: white;
+            text-decoration: underline solid white;
+            margin-bottom: 10px;
+        }
+        h5{
+            font-size: 16px;
+            background: rgba(255,255,255,.15);
+            padding: 5px 15px;
+            display: inline-block;
+            font-weight: 600;
+            margin-bottom: 10px;
+        }
+        ul{
+            padding-left: 20px;
+            li{
+                letter-spacing: 1px;
+            }
+        }
+
+        &:last-child{
+            padding-bottom: 0;
+        }
+
+        &::before{
+            content: "";
+            position: absolute;
+            width: 16px;
+            height: 16px;
+            border-radius: 50px;
+            left: -9px;
+            top: 0;
+            background: red;
+            border: 2px solid darkred;
+        }
+    }
+    h1{
+        text-align: center;
+    }
+    
+}
+.navbar{
+    position: sticky;
+    top: 0;
+    z-index: 5;
+}
